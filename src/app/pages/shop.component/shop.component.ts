@@ -4,10 +4,9 @@ import { environment } from '../../../environments/environment';
 import { ShopService } from '../../core/services/shop.service';
 @Component({
   selector: 'app-shop',
-  imports: [],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.scss',
-  providers: [ShopService]
+  standalone:false,
 })
 export class ShopComponent implements OnInit {
 
